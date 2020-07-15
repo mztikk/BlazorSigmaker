@@ -1,0 +1,9 @@
+﻿@page "/"
+
+<h1>AoB Sigmaker</h1>
+
+<div>
+    <textarea id="input" @bind="Input" />
+    <button class="borderbutton" @onclick="Generate"><span>Generate</span></button>
+    <textarea id="output" @bind="Output" readonly />
+</div>
