@@ -21,7 +21,7 @@ namespace BlazorSigmaker
                 .AddSingleton<IAobValidator, AobValidator>()
                 .AddSingleton<IAobPrettifier, AobPrettifier>();
 
-            await builder.Build().RunAsync();
+            await builder.Build().RunAsync(); 
         }
     }
 }
