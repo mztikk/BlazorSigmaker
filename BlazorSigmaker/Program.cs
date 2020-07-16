@@ -16,7 +16,7 @@ namespace BlazorSigmaker
 
             builder
                 .Services
-                //.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) })
+                .AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) })
                 .AddSingleton<IAobGenerator, AobGenerator>()
                 .AddSingleton<IAobValidator, AobValidator>()
                 .AddSingleton<IAobPrettifier, AobPrettifier>();
